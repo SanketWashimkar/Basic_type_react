@@ -8,7 +8,8 @@ function App() {
    <div>
  
     {/* <BaseComponent title='Frontend Developer' name='Sanket Washimkar'  />  */}
-    <UserMangment />
+    <UserMangment isLogin={false} />
+    <UserMangment  isLogin={true}/>
    </div>
   );
 }
