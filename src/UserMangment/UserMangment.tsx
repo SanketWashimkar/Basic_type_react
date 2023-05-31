@@ -1,9 +1,15 @@
 import styless from './UserMangment.module.scss';
 
-const UserMangment = () => {
+const UserMangment:React.FC<{
+isLogin:boolean
+
+}> = ({isLogin}) => {
+
+    const classValue = isLogin? 'main-container' : 'mainContainerLogout';
+
 
 return (
- <div className={styless.mainContainer}>
+ <div className={styless[classValue]}>
 <p> UserMangment</p>
  </div>
 
